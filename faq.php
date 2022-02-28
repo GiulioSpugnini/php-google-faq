@@ -29,8 +29,8 @@ $faqs = [
 
         <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:</li>
         <ul>
-            <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
-            <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
+            <li class='sub-list'>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
+            <li class='sub-list'>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
         </ul>
         <li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
         <p>
@@ -62,15 +62,16 @@ $faqs = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faq</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <?php foreach ($faqs as $faq) : ?>
-
-        <h2><?= $faq['question'] ?></h2>
-        <?= $faq['answer'] ?>
-
-    <?php endforeach; ?>
+    <div class="container">
+        <?php foreach ($faqs as $faq) : ?>
+            <h2><?= $faq['question'] ?></h2>
+            <?= $faq['answer'] ?>
+        <?php endforeach; ?>
+    </div>
 </body>
 
 </html>

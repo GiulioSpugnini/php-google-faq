@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sub-list{
+    list-style-type: lower-latin;
+    margin-left: 30px;
+}
+li{
+    
+    list-style-type: decimal;
+}
