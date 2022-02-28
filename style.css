@@ -1,8 +1,17 @@
 * {
   box-sizing: border-box;
   padding: 0;
+  margin: 0;
 }
+p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ul,li{
+    padding-top: 5px;
+    padding-bottom: 5px;
 
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,23 +23,31 @@ main .sub-list {
 main li {
   list-style-type: decimal;
 }
-header ul {
+header ul, footer ul {
   list-style: none;
   display: flex;
   justify-content: flex-start;
 }
-header{
+header,main{
     padding-bottom: 50px;
 }
-header li{
+header li, footer li{
     margin-right: 30px;
     
 }
 header img {
-  max-width: 100px;
+    max-width: 100px;
 }
 
 #logo{
     display: flex;
     align-items: center;
+}
+footer{
+    background-color: gray;
+}
+.container> div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
 }

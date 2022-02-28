@@ -64,6 +64,15 @@ $faqs = [
     ],
 
 ];
+$footers = [
+    "<ul>
+        <li>Google</li>
+        <li>Tutto su Google</li>
+        <li>Privacy</li>
+        <li>Termini</li>
+    </ul>
+    ",
+];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,7 +101,18 @@ $faqs = [
         </main>
     </div>
     <footer>
-
+        <div class="container">
+            <div>
+                <?php foreach ($footers as $footer) :  ?>
+                    <?= $footer ?>
+                <?php endforeach; ?>
+                <select name="languages" id="languages">
+                    <option value="0">Italiano</option>
+                    <option value="1">Inglese</option>
+                    <option value="2">Francese</option>
+                </select>
+            </div>
+        </div>
     </footer>
 </body>
 
