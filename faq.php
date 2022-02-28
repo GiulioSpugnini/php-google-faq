@@ -1,5 +1,16 @@
 <?php
-
+$navs = [
+    'logo' => " <div id='logo'><img src='https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png'><h3>Privacy e termini</h3></img> </div>",
+    'navbar' => "
+    <ul>
+        <li>Introduzione</li>
+        <li>Norme sulla privacy</li>
+        <li>Termini di servizio</li>
+        <li>Tecnologie</li>
+        <li>Domande frequenti</li>
+    </ul>
+    ",
+];
 $faqs = [
     [
         'question' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
@@ -66,12 +77,23 @@ $faqs = [
 </head>
 
 <body>
-    <div class="container">
-        <?php foreach ($faqs as $faq) : ?>
-            <h2><?= $faq['question'] ?></h2>
-            <?= $faq['answer'] ?>
+    <header>
+        <?php foreach ($navs as $nav) :  ?>
+            <?= $nav ?>
+
         <?php endforeach; ?>
+    </header>
+    <div class="container">
+        <main>
+            <?php foreach ($faqs as $faq) : ?>
+                <h2><?= $faq['question'] ?></h2>
+                <?= $faq['answer'] ?>
+            <?php endforeach; ?>
+        </main>
     </div>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

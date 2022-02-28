@@ -1,17 +1,33 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.sub-list{
-    list-style-type: lower-latin;
-    margin-left: 30px;
+main .sub-list {
+  list-style-type: lower-latin;
+  margin-left: 30px;
 }
-li{
+main li {
+  list-style-type: decimal;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+header li{
+    margin-right: 30px;
     
-    list-style-type: decimal;
+}
+header img {
+  max-width: 100px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
 }
