@@ -1,6 +1,6 @@
 <?php
 $navs = [
-    'logo' => " <div id='logo'><img src='https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png'><h3>Privacy e termini</h3></img> </div>",
+    'logo' => " <div id='logo'><img src='https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png'><h3>Privacy e termini</h3></img> </div> ",
     'navbar' => "
     <ul>
         <li>Introduzione</li>
@@ -8,7 +8,7 @@ $navs = [
         <li>Termini di servizio</li>
         <li>Tecnologie</li>
         <li>Domande frequenti</li>
-    </ul>
+    </ul> <hr>
     ",
 ];
 $faqs = [
